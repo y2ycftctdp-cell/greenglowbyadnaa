@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="bs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Green Glow Beauty Studio</title>
+<meta name="description" content="Green Glow Beauty Studio — Sarajevo. Napredni tretmani lica, aparativna kozmetika, Green Peel i njega kože sa potpunom posvećenošću.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cursor" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topstrip"><div class="wrap"><span data-i18n="topstrip">Vaše vrijeme. Vaš ritual.</span></div></div>
+  <div class="wrap">
+    <nav>
+      <a href="#" class="logo-mark nav-logo" role="img" aria-label="Green Glow Beauty Studio"></a>
+      <div class="topnav">
+        <a href="#" data-i18n="nav_home">Početna</a>
+        <a href="https://menu.flobyte360.com/green-glow/" target="_blank" rel="noopener" data-i18n="nav_treat">Tretmani</a>
+        <div class="tn-dd">
+          <span class="tn-trigger" data-i18n="nav_edu">Edukacije</span>
+          <div class="tn-menu">
+            <span data-i18n="dd_face">Tretmani lica</span>
+            <span data-i18n="edu_gp">Green Glow</span>
+            <span data-i18n="cat_depil">Depilacija</span>
+            <span data-i18n="cat_mass">Masaže</span>
+          </div>
+        </div>
+        <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+        <a href="#onama" data-i18n="nav_about">O nama</a>
+      </div>
+      <button type="button" class="nav-burger" aria-label="Meni" aria-controls="drawer" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="drawer-scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <a href="#" class="logo-mark drawer-logo" role="img" aria-label="Green Glow Beauty Studio"></a>
+    <button type="button" class="drawer-close" aria-label="Zatvori meni">
+      <span></span><span></span>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#" data-i18n="nav_home">Početna</a>
+    <a href="https://menu.flobyte360.com/green-glow/" target="_blank" rel="noopener" data-i18n="nav_treat">Tretmani</a>
+    <a href="#kontakt" data-i18n="nav_edu">Edukacije</a>
+    <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+    <a href="#onama" data-i18n="nav_about">O nama</a>
+  </nav>
+  <div class="drawer-foot">
+    <div class="drawer-langs" role="group" aria-label="Jezik / Language">
+      <button type="button" data-lang="bs">BS</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="de">DE</button>
+      <button type="button" data-lang="ru">RU</button>
+      <button type="button" data-lang="tr">TR</button>
+    </div>
+    <a href="https://instagram.com/greenglow.byadna" target="_blank" rel="noopener" class="drawer-cta" data-i18n="nav_reserve">Rezerviši</a>
+  </div>
+</aside>
+
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="./hero-poster.jpg">
+    <source src="./hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-kicker">Beauty &amp; Massage Studio Sarajevo</span>
+        <h1 class="hero-brand">Green&nbsp;Glow<span class="hero-by">by Adna</span></h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Green Peel</span><i>✦</i><span>Hydrafacial</span><i>✦</i><span>Dubinsko čišćenje</span><i>✦</i><span>Anti-age tretman</span><i>✦</i><span>Masaža lica i tijela</span><i>✦</i><span>Depilacija</span><i>✦</i><span>Signature tretman</span><i>✦</i>
+    <span>Green Peel</span><i>✦</i><span>Hydrafacial</span><i>✦</i><span>Dubinsko čišćenje</span><i>✦</i><span>Anti-age tretman</span><i>✦</i><span>Masaža lica i tijela</span><i>✦</i><span>Depilacija</span><i>✦</i><span>Signature tretman</span><i>✦</i>
+  </div>
+</div>
+
+<section id="filozofija" class="philosophy">
+  <div class="phil-logo" aria-hidden="true"></div>
+  <div class="wrap phil-inner">
+    <h2 data-i18n="phil_title">Otkrij ljepotu koja dolazi iznutra.</h2>
+    <div class="phil-rule" aria-hidden="true"></div>
+    <div class="phil-cols">
+      <p data-i18n="phil_p1">Prepusti se trenucima njege, opuštanja i pažnje. Otkrij rituale koji ističu tvoju prirodnu ljepotu i vraćaju koži svježinu i blistavost. Green Glow je više od kozmetičkog salona. To je mjesto gdje svakodnevni tempo usporava, gdje svaki dodir ima svoju svrhu, a svaki trenutak postaje prilika da se posvetite sebi.</p>
+      <p data-i18n="phil_p2">Svaki tretman započinjemo razgovorom, pažljivom analizom kože i razumijevanjem vaših potreba. Na osnovu toga kreiramo individualni pristup, birajući odgovarajuće preparate, tehnologije i tretmane. Naš cilj nije samo vidljiv rezultat, već zdrava, njegovana koža i osjećaj zadovoljstva koji dolazi iznutra.</p>
+    </div>
+    <div class="phil-sep" aria-hidden="true"></div>
+    <div class="phil-feats">
+      <div class="phil-feat">
+        <span class="pf-num">01.</span>
+        <h3 data-i18n="phil_f1t">Ljepota bez žurbe</h3>
+        <p data-i18n="phil_f1d">Vjerujemo u kvalitet, a ne u brzinu. Svakom tretmanu posvećujemo vrijeme, pažnju i potpunu posvećenost, stvarajući prostor u kojem se možete opustiti i prepustiti njezi.</p>
+      </div>
+      <div class="phil-feat">
+        <span class="pf-num">02.</span>
+        <h3 data-i18n="phil_f2t">Savremena tehnologija</h3>
+        <p data-i18n="phil_f2d">Spoj stručnog znanja i naprednih tehnologija omogućava nam da pružimo ciljanu i učinkovitu njegu.</p>
+      </div>
+      <div class="phil-feat">
+        <span class="pf-num">03.</span>
+        <h3 data-i18n="phil_f3t">Njega prilagođena vama</h3>
+        <p data-i18n="phil_f3d">Svaka koža ima svoju priču i zahtijeva poseban pristup. Zato svaki plan njege kreiramo individualno, u skladu s vašim potrebama, željama i ciljevima.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="usluge" class="services">
+  <div class="wrap services-grid">
+    <div class="services-copy">
+      <h2 class="services-title" data-i18n="serv_title">Naše usluge</h2>
+      <div class="service-list">
+        <a href="#usluge" class="service-row is-active" data-img="./usluge1.jpg">
+          <span class="sr-num">01</span>
+          <div class="sr-body">
+            <h3 data-i18n="serv_1t">Njega lica</h3>
+            <p data-i18n="serv_1d">Tretmani lica za svaki tip kože.</p>
+          </div>
+        </a>
+        <a href="#usluge" class="service-row" data-img="./usluge2.jpg">
+          <span class="sr-num">02</span>
+          <div class="sr-body">
+            <h3 data-i18n="serv_2t">Aparativna kozmetika</h3>
+            <p data-i18n="serv_2d">Napredni tretmani uz savremenu tehnologiju.</p>
+          </div>
+        </a>
+        <a href="#usluge" class="service-row" data-img="./usluge3.jpg">
+          <span class="sr-num">03</span>
+          <div class="sr-body">
+            <h3 data-i18n="serv_3t">Obrve</h3>
+            <p data-i18n="serv_3d">Oblikovanje i farbanje obrva za Vaš lični izgled.</p>
+          </div>
+        </a>
+        <a href="#usluge" class="service-row" data-img="./usluge4.jpg">
+          <span class="sr-num">04</span>
+          <div class="sr-body">
+            <h3 data-i18n="serv_4t">Masaža</h3>
+            <p data-i18n="serv_4d">Opuštajuće i terapeutske masaže tijela.</p>
+          </div>
+        </a>
+        <a href="#usluge" class="service-row" data-img="./usluge5.jpg">
+          <span class="sr-num">05</span>
+          <div class="sr-body">
+            <h3 data-i18n="serv_5t">Depilacija</h3>
+            <p data-i18n="serv_5d">Lycon voskom – za glatku i njegovanu kožu.</p>
+          </div>
+        </a>
+        <a href="#usluge" class="service-row" data-img="./usluge6.jpg">
+          <span class="sr-num">06</span>
+          <div class="sr-body">
+            <h3 data-i18n="serv_6t">Tretmani tijela</h3>
+            <p data-i18n="serv_6d">Brazilska maderoterapija i Vacuum slim.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="services-media">
+      <img class="services-img" src="./usluge1.jpg" alt="Naše usluge — Green Glow Beauty Studio">
+      <span class="services-cap" aria-hidden="true">N° 01 · Njega lica</span>
+    </div>
+  </div>
+</section>
+
+<section id="cjenovnik-intro" class="price-intro">
+  <div class="wrap">
+    <h2 data-i18n="price_intro">Potpuni cjenovnik svih usluga</h2>
+    <a href="https://menu.flobyte360.com/green-glow/" target="_blank" rel="noopener" class="btn-price" data-i18n="serv_cta">Cjenovnik</a>
+  </div>
+</section>
+
+<div class="price-modal" id="cjenovnik" aria-hidden="true">
+  <div class="price-scrim" data-close></div>
+  <div class="price-dialog" role="dialog" aria-modal="true" aria-label="Cjenovnik">
+    <button type="button" class="price-close" data-close aria-label="Zatvori cjenovnik"><span></span><span></span></button>
+    <div class="price-dialog-scroll wrap">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="price_eyebrow">Cjenovnik</span>
+    <h2 data-i18n="price_title">Tretmani i cijene</h2>
+    <p data-i18n="price_sub">Svaki tretman počinje analizom kože i prilagođava se tvojim potrebama. Cijene su izražene u KM.</p>
+  </div>
+  <div class="price-grid">
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.4"/><path d="M12 4v2.2M12 17.8V20M4 12h2.2M17.8 12H20M6.3 6.3l1.6 1.6M16.1 16.1l1.6 1.6M17.7 6.3l-1.6 1.6M7.9 16.1l-1.6 1.6"/></svg></span><h3 id="cat-njega" data-i18n="cat_face">Njega lica</h3></div>
+      <ul class="rows">
+        <li><span>Sensiderm</span><span class="pr">100</span></li>
+        <li><span>Hydra Maximum</span><span class="pr">100</span></li>
+        <li><span>Detox</span><span class="pr">100</span></li>
+        <li><span data-i18n="it_refreshing">Osvježavajući</span><span class="pr">100</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c3.1 4 4.8 6.6 4.8 9.1A4.8 4.8 0 0 1 7.2 12.6c0-2.5 1.7-5.1 4.8-9.1Z"/></svg></span><h3>Hydrafacial</h3></div>
+      <ul class="rows">
+        <li><span>Basic</span><span class="pr">120</span></li>
+        <li><span>Deluxe</span><span class="pr">160</span></li>
+        <li><span>Platinum</span><span class="pr">190</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18c0-6 4-11 13-12 1 8-4 13-13 12Z"/><path d="M6.5 17.5C9 14 12 11.5 16 10"/></svg></span><h3>Green Peel</h3></div>
+      <div class="note" data-i18n="peel_note">Pojedinačni tretman · 90 min</div>
+      <ul class="rows">
+        <li><span>Black</span><span class="pr">140</span></li>
+        <li><span>Brightening</span><span class="pr">170</span></li>
+        <li><span>Energy</span><span class="pr">180</span></li>
+        <li><span>Fresh Up</span><span class="pr">160</span></li>
+        <li><span data-i18n="peel_classic">Classic — paket (2 tretmana + kućna njega)</span><span class="pr">400</span></li>
+        <li><span data-i18n="peel_energyq10">Energy Q10 — paket (tretman + kućna njega)</span><span class="pr">300</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.2"/><circle cx="6.5" cy="6.5" r="1.2"/><circle cx="17.5" cy="6.5" r="1.2"/><circle cx="6.5" cy="17.5" r="1.2"/><circle cx="17.5" cy="17.5" r="1.2"/></svg></span><h3>Microneedling</h3></div>
+      <ul class="rows">
+        <li><span data-i18n="it_shallow">Plitki</span><span class="pr">150</span></li>
+        <li><span data-i18n="it_deep">Duboki</span><span class="pr">180</span></li>
+      </ul>
+      <div class="subh" data-i18n="micro_addons">Dodaci</div>
+      <ul class="rows">
+        <li><span data-i18n="micro_ultra">Čišćenje ultrazvučnom špatulom</span><span class="pr">30</span></li>
+        <li><span data-i18n="micro_led">LED maska</span><span class="pr">20</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/></svg></span><h3 id="cat-signature" data-i18n="cat_sig">Signature tretmani</h3></div>
+      <div class="note" data-i18n="sig_note">Autorski rituali studija</div>
+      <ul class="rows">
+        <li><span>Golden Glow Ritual</span><span class="pr">140</span></li>
+        <li><span data-i18n="sig_greenreset">Green Reset (detox)</span><span class="pr">120</span></li>
+        <li><span data-i18n="sig_glass">Glass Skin Ritual (duboka hidratacija)</span><span class="pr">140</span></li>
+        <li><span data-i18n="sig_pure">Pure Glow Therapy (osjetljiva koža)</span><span class="pr">120</span></li>
+        <li><span>Skin Harmony Treatment</span><span class="pr">120</span></li>
+        <li><span>Hydra Luxury Experience</span><span class="pr">150</span></li>
+        <li><span>Power Lift Facial</span><span class="pr">140</span></li>
+        <li><span>Eyes Revival Therapy</span><span class="pr">60</span></li>
+        <li><span data-i18n="sig_neck">Neck Perfection Ritual (vrat i dekolte)</span><span class="pr">80</span></li>
+        <li><span>Glow &amp; Relax Ritual</span><span class="pr">120</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15c3.5 2.5 12.5 2.5 16 0"/><path d="M7.5 15c-.8-3.2.6-6.2 4.5-7.8 3.9 1.6 5.3 4.6 4.5 7.8"/></svg></span><h3 id="cat-masaze" data-i18n="cat_mass">Masaže</h3></div>
+      <ul class="rows">
+        <li><span data-i18n="mass_relax30">Relax · 30 min</span><span class="pr">40</span></li>
+        <li><span data-i18n="mass_relax60">Relax · 60 min</span><span class="pr">70</span></li>
+        <li><span data-i18n="mass_antistress">Anti-stres</span><span class="pr">75</span></li>
+        <li><span>Aroma Relax Ritual</span><span class="pr">80</span></li>
+        <li><span>Back Relief</span><span class="pr">50</span></li>
+        <li><span>Glow Relax Ritual</span><span class="pr">120</span></li>
+        <li><span data-i18n="mass_therapeutic">Terapeutska / medicinska</span><span class="pr">100</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9c4-2.2 6 2.2 8 0s4-2.2 8 0"/><path d="M4 15c4-2.2 6 2.2 8 0s4-2.2 8 0"/></svg></span><h3 id="cat-tijela" data-i18n="cat_body">Tretmani tijela</h3></div>
+      <div class="subh" data-i18n="body_mader">Brazilska maderoterapija</div>
+      <ul class="rows">
+        <li><span data-i18n="body_region">Jedna regija</span><span class="pr">50</span></li>
+        <li><span data-i18n="body_whole">Cijelo tijelo</span><span class="pr">90</span></li>
+        <li><span data-i18n="body_pack5">Paket 5</span><span class="pr">230</span></li>
+        <li><span data-i18n="body_pack10">Paket 10</span><span class="pr">430</span></li>
+      </ul>
+      <div class="subh">Vacuum Slim</div>
+      <ul class="rows">
+        <li><span data-i18n="body_single">Pojedinačno</span><span class="pr">70</span></li>
+        <li><span data-i18n="body_pack5">Paket 5</span><span class="pr">320</span></li>
+        <li><span data-i18n="body_pack10">Paket 10</span><span class="pr">600</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c6.5-1 11.5-6 14.5-14.5"/><path d="M17 6.5l2.2-2.2M13.5 4.5l1.4-1.4"/></svg></span><h3 id="cat-depilacija" data-i18n="cat_depil">Depilacija</h3></div>
+      <div class="subh" data-i18n="depil_face">Lice</div>
+      <ul class="rows">
+        <li><span data-i18n="d_wholeface">Cijelo lice</span><span class="pr">15</span></li>
+        <li><span data-i18n="d_sideburns">Zalisci</span><span class="pr">5</span></li>
+        <li><span data-i18n="d_chin">Brada</span><span class="pr">5</span></li>
+      </ul>
+      <div class="subh" data-i18n="depil_body">Tijelo</div>
+      <ul class="rows">
+        <li><span data-i18n="d_underarms">Pazuho</span><span class="pr">15</span></li>
+        <li><span data-i18n="d_arms">Ruke</span><span class="pr">20</span></li>
+        <li><span data-i18n="d_back">Leđa</span><span class="pr">40</span></li>
+        <li><span data-i18n="d_stomach">Stomak</span><span class="pr">30</span></li>
+        <li><span data-i18n="d_stomachline">Linija stomaka</span><span class="pr">10</span></li>
+        <li><span data-i18n="d_fulllegs">Cijele noge</span><span class="pr">40</span></li>
+        <li><span data-i18n="d_halflegs">Pola nogu</span><span class="pr">20</span></li>
+        <li><span data-i18n="d_bikini">Uske bikini</span><span class="pr">15</span></li>
+        <li><span data-i18n="d_deepbikini">Duboko bikini</span><span class="pr">25</span></li>
+        <li><span data-i18n="d_brazilian">Brazilska</span><span class="pr">40</span></li>
+      </ul>
+    </article>
+
+    <article class="cat">
+      <div class="cat-head"><span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13.5c3.2-4.2 12.8-4.2 16 0"/><path d="M6.5 11.3c2.6-2 8.4-2 11 0"/></svg></span><h3 id="cat-obrve" data-i18n="cat_brows">Obrve</h3></div>
+      <ul class="rows">
+        <li><span data-i18n="brows_shape">Oblikovanje</span><span class="pr">20</span></li>
+        <li><span data-i18n="brows_elan">Elan (oblikovanje + nijansiranje)</span><span class="pr">30</span></li>
+      </ul>
+    </article>
+
+  </div>
+    </div>
+  </div>
+</div>
+
+<section id="onama" class="about">
+  <div class="wrap about-grid">
+    <div class="copy">
+      <span class="eyebrow" data-i18n="about_eyebrow">O nama</span>
+      <h2 data-i18n="about_title">Zdrava koža. Prirodno lijepa.</h2>
+      <p data-i18n="about_p1">Green Glow studio nastao je iz strasti prema vrhunskoj njezi i zdravlju kože. Sa višegodišnjim iskustvom u oblasti medicinske i estetske kozmetike, salon predstavlja sinonim za stručnost, posvećenost i vrhunske rezultate.</p>
+      <p data-i18n="about_p2">Vjerujem da je zdrava koža temelj prirodne ljepote, zbog čega svaki tretman prilagođavam individualnim potrebama klijenta. Salon vodi Adna, dugogodišnji stručnjak u industriji ljepote i zvanični certificirani edukator za Green Peel tretmane.</p>
+      <p data-i18n="about_p3">Pomažem vam da postignete zdrav i blistav izgled kože.</p>
+    </div>
+    <div class="about-visual">
+      <img class="about-photo" src="./about.webp" alt="Adna — Green Glow Beauty Studio by Adna">
+      <figcaption class="about-cred">
+        <span class="about-cred-name">Adna</span>
+        <span class="about-cred-rule" aria-hidden="true"></span>
+        <span class="about-cred-text" data-i18n="about_cred">Kozmetičarka sa medicinskim obrazovanjem. Green Peel trener za BiH i master edukator za tretmane lica.</span>
+      </figcaption>
+    </div>
+  </div>
+</section>
+
+<section id="brojac" class="counters">
+  <div class="wrap">
+    <span class="counters-eyebrow" data-i18n="cnt_eyebrow">Kvalitet i stručnost</span>
+    <div class="counters-grid">
+      <div class="counter-item">
+        <div class="counter-num"><span class="cnt" data-target="15">0</span><span class="counter-suffix">+</span></div>
+        <p class="counter-label" data-i18n="cnt1">godina iskustva</p>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num"><span class="cnt" data-target="100">0</span><span class="counter-suffix">%</span></div>
+        <p class="counter-label" data-i18n="cnt2">posvećenost svakom klijentu</p>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num"><span class="cnt" data-target="98">0</span><span class="counter-suffix">%</span></div>
+        <p class="counter-label" data-i18n="cnt3">klijenata koji se ponovo vraćaju</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rezultati" class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="results_eyebrow">Rezultati</span>
+    <h2 data-i18n="results_title">Stvarni rezultati iz salona</h2>
+    <p data-i18n="results_sub">Transformacija kože nakon naših naprednih tretmana. Svaki tretman je prilagođen individualnim potrebama kože sa ciljem dubinske obnove, smirivanja upala i vraćanja prirodnog sjaja. Vaša koža zaslužuje njegu sa potpunom posvećenošću.</p>
+  </div>
+  <div class="rgrid">
+    <article class="rcard">
+      <span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/></svg></span>
+      <h3 data-i18n="res1_t">Vidljiv sjaj</h3>
+      <p data-i18n="res1_p">Koža blista i djeluje odmornije već nakon prve posjete.</p>
+    </article>
+    <article class="rcard">
+      <span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c3.1 4 4.8 6.6 4.8 9.1A4.8 4.8 0 0 1 7.2 12.6c0-2.5 1.7-5.1 4.8-9.1Z"/></svg></span>
+      <h3 data-i18n="res2_t">Dublja hidratacija</h3>
+      <p data-i18n="res2_p">Napojena, zategnuta i mekša koža koja traje.</p>
+    </article>
+    <article class="rcard">
+      <span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.3 12.3l2.4 2.3 4.9-5"/></svg></span>
+      <h3 data-i18n="res3_t">Ujednačen ten</h3>
+      <p data-i18n="res3_p">Smanjene nepravilnosti, crvenilo i vidljive pore.</p>
+    </article>
+    <article class="rcard">
+      <span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.3V12l3 1.8"/></svg></span>
+      <h3 data-i18n="res4_t">Dugotrajna njega</h3>
+      <p data-i18n="res4_p">Zdravija koža i nakon više sedmica, ne samo trenutno.</p>
+    </article>
+  </div>
+
+</section>
+
+
+
+<section id="transformacija" class="tk">
+  <div class="tk-dark" aria-hidden="true"></div>
+  <div class="tk-rail" aria-hidden="true">
+    <span class="tk-rail-num">01</span>
+    <span class="tk-rail-line"></span>
+    <span class="tk-rail-num">02</span>
+  </div>
+  <div class="wrap tk-inner">
+    <div class="tk-visual">
+      <figure class="tk-ph tk-ph1">
+        <img src="./rezultat2-prije.jpg" alt="Prije — Green Glow">
+        <figcaption class="tk-cap" data-i18n="tk_before">01 / Prije</figcaption>
+      </figure>
+      <figure class="tk-ph tk-ph2">
+        <img src="./rezultat2-poslije.jpg" alt="Poslije — Green Glow">
+        <figcaption class="tk-cap" data-i18n="tk_after">02 / Poslije</figcaption>
+      </figure>
+    </div>
+    <div class="tk-copy">
+      <span class="tk-eyebrow" data-i18n="tk_eyebrow">Transformacija kože</span>
+      <h2 class="tk-title"><span data-i18n="tk_title1">Put do prirodnog</span> <span class="tk-accent" data-i18n="tk_title2">balansa i čiste kože.</span></h2>
+      <p class="tk-sub" data-i18n="tk_sub">Naši personalizovani tretmani ciljaju dubinske uzroke upala, umiruju crvenilo i podstiču regeneraciju za dugoročno zdravlje i sjaj.</p>
+      <div class="tk-rule" aria-hidden="true"></div>
+      <a href="#galerija" class="tk-more" data-i18n="tk_more">Pogledaj i ostale transformacije →</a>
+      <a href="#kontakt" class="tk-cta" data-i18n="tk_cta">Zakažite besplatnu konsultaciju</a>
+    </div>
+  </div>
+</section>
+
+<div class="gal-modal" id="galerija" aria-hidden="true">
+  <div class="gal-scrim" data-close></div>
+  <div class="gal-dialog" role="dialog" aria-modal="true" aria-label="Transformacije">
+    <button type="button" class="gal-close" data-close aria-label="Zatvori"><span></span><span></span></button>
+    <span class="eyebrow" data-i18n="tk_eyebrow">Transformacija kože</span>
+    <h2 class="gal-title" data-i18n="gal_title">Ostale transformacije</h2>
+    <div class="gal-grid" id="gal-grid">
+      <figure><img src="./galerija1.jpg" alt="Transformacija kože — prije i poslije" loading="lazy"></figure>
+      <figure><img src="./galerija2.jpg" alt="Transformacija kože — prije i poslije" loading="lazy"></figure>
+      <figure><img src="./galerija3.jpg" alt="Transformacija kože — prije i poslije" loading="lazy"></figure>
+      <figure><img src="./galerija4.jpg" alt="Transformacija kože — prije i poslije" loading="lazy"></figure>
+    </div>
+    <p class="gal-more" data-i18n="gal_more">i još mnogo njih</p>
+  </div>
+</div>
+
+<section id="recenzije" class="reviews">
+  <div class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow rev-eyebrow"><span data-i18n="rev_eyebrow">Preko stotine zadovoljnih klijenata</span><br><span data-i18n="rev_eyebrow2">Jedan studio</span></span>
+    <h2 data-i18n="rev_title">Šta moji klijenti kažu nakon tretmana</h2>
+    <p data-i18n="rev_sub">Samo provjerene recenzije, nefiltrirane, napisane njihovim vlastitim riječima.</p>
+  </div>
+  <div class="rev-carousel">
+  <div class="rev-track" id="revTrack">
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev1">Čarobne ruke koje su mi preporodile lice. Hvala na svakom savjetu i tretmanu koji je bukvalno spasio moju kožu.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev6">Adna je toliko ljubazna, strpljiva i posvećena svakom detalju da se odmah osjetiš opušteno čim uđeš. Stvarno se vidi da voli ovaj posao.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev2">Želim da se pohvalim da mi je lice poslije tretmana fenomenalno, mekano.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev4">Hvala ti od srca što si mi spasila lice. Samo neko ko se borio sa bubuljicama zna koliko to utiče na samopouzdanje. Tvoje znanje i strpljenje su mi promijenili svakodnevnicu.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev7">Svaki put kada dođem, dočeka me topao osmijeh, odlična energija i potpuna profesionalnost.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev3">Jedna, jedina, najbolja.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev5">Od upaljenog lica do savršenog sjaja — ovo je jedina adresa kojoj vjerujem kada je njega kože u pitanju.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+    <figure class="rev-card">
+      <div class="rev-stars" aria-hidden="true">★★★★★</div>
+      <blockquote data-i18n="rev8">Posebno mi se sviđa što ne radi na brzinu, posveti ti se maksimalno, sasluša šta želiš i da iskren savjet. Uvijek izađem zadovoljna i nasmijana.</blockquote>
+      <figcaption data-i18n="rev_who">Klijentica Green Glow</figcaption>
+    </figure>
+  </div>
+  <div class="rev-controls">
+    <button type="button" class="rev-arrow" data-dir="-1" aria-label="Prethodna recenzija">‹</button>
+    <div class="rev-dots" id="revDots"></div>
+    <button type="button" class="rev-arrow" data-dir="1" aria-label="Sljedeća recenzija">›</button>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+<section class="statement">
+  <div class="wrap">
+    <blockquote data-i18n="statement_q">Zaslužuješ najbolje. Hvala što biraš sebe.</blockquote>
+    <div class="by">Green Glow · by Adna</div>
+  </div>
+</section>
+
+<section id="kontakt" class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow" data-i18n="contact_eyebrow">Rezervacija</span>
+    <h2 data-i18n="contact_title">Zakaži svoj trenutak sjaja</h2>
+  </div>
+  <div class="book-grid">
+    <div class="info">
+      <div class="row"><span class="k" data-i18n="k_address">Adresa</span><span class="v">Kemala Kapetanovića bb, Sarajevo</span></div>
+      <div class="row"><span class="k" data-i18n="k_hours">Radno vrijeme</span><span class="v"><span data-i18n="v_hours">Pon–Sub 10–20</span><br><span data-i18n="v_hours2">Ned zatvoreno</span></span></div>
+      <div class="row"><span class="k" data-i18n="k_phone">Telefon</span><span class="v"><span id="tel">062 086 614</span><button class="copybtn" data-copy="062086614" type="button" data-i18n="copy_btn">Kopiraj</button></span></div>
+      <div class="row"><span class="k">Instagram</span><span class="v"><a href="https://instagram.com/greenglow.byadna" target="_blank" rel="noopener">@greenglow.byadna</a></span></div>
+    </div>
+    <div class="contact-cta">
+      <a class="cc-ig" href="https://instagram.com/greenglow.byadna" target="_blank" rel="noopener">
+        <span class="cc-ig-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="cc-ig-txt"><span data-i18n="cc_ig">Kontaktiraj na Instagramu</span><small>@greenglow.byadna</small></span>
+      </a>
+      <p class="cc-or"><span data-i18n="cc_or">ili pozivom na broj telefona</span> <a href="tel:+387062086614">062 086 614</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo-mark footer-logo" role="img" aria-label="Green Glow Beauty Studio"></div>
+  <small>Beauty Studio · by Adna · Kemala Kapetanovića bb, Sarajevo · © 2026</small>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
